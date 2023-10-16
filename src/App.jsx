@@ -13,14 +13,14 @@ import AdminHome from "./components/Layout/DashboardLayoutPage/AdminHome";
 import PrivateRoute from "./components/CustomUser/PrivateRoute";
 import ErrorPage from "./components/CustomUser/ErrorPage";
 import Login from "./components/CustomFrom/Login";
-import From from "../From";
-import UserFrom from "./components/CustomFrom/UserFrom";
 
 function App() {
-
+  // const userJSON = localStorage.getItem("user");
+  // const user = JSON.parse(userJSON);
+  // console.log("Info",users.role);
   const user = {
     name: "Lition",
-    role: "user",
+    role: "admin",
   };
 
   let userPath;
@@ -82,7 +82,6 @@ function App() {
         </Route>
         <Route path="unauthorized" element={<ErrorPage />} />
         <Route path="login" element={<Login />} />
-        <Route path="userfrom" element={<UserFrom />} />
       </Routes>
     </>
   );

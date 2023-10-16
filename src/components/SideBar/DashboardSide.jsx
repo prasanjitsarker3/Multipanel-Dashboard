@@ -29,6 +29,7 @@ const DashboardSide = () => {
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
   };
+ 
 
   return (
     <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4  shadow-2xl shadow-blue-gray-900 bg-blue-gray-50">
@@ -169,7 +170,7 @@ const DashboardSide = () => {
             Admin Panel
           </Link>
         </ListItem>
-        <ListItem>
+        <ListItem >
           <ListItemPrefix>
             <PowerIcon className="h-5 w-5" />
           </ListItemPrefix>

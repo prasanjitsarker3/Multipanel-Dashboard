@@ -4,9 +4,7 @@ import AdminSideBar from "../SideBar/AdminSideBar"
 const AdminPanel = () => {
   return (
     <div className=" flex p-3">
-       <div >
-        <AdminSideBar/>
-       </div>
+       <AdminSideBar/>
       <Outlet></Outlet>
     </div>
   )
